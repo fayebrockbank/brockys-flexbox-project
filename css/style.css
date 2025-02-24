@@ -1,0 +1,128 @@
+:root{
+    --brockys-blue: #0d98ba;
+    --brockys-dark-blue: #0B88A7;
+    --brockys-orange: #ff914d;
+    --brockys-charcoal: #333333;
+}
+
+@font-face {
+    font-family: 'gagalin';
+    src: url('../fonts/gagalin/Gagalin-Regular.otf') format('opentype');
+}
+
+body{
+    box-sizing: border-box;
+    line-height: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 500;
+    margin: 0 0 10px 0;
+    line-height: 2.5rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+h6 {
+    font-size: 14px;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 120px;
+    max-width: 1920px;
+    border-bottom: 1px solid var(--brockys-charcoal);
+}
+
+nav ul li{
+    display: inline-block;
+    padding-left: 20px;
+}
+
+nav ul li a{
+    color: var(--brockys-charcoal);
+    text-decoration: none;
+}
+
+.logo-name{
+    display: block;
+    font-family: 'gagalin';
+    font-size: 3rem;
+    color: var(--brockys-blue);
+    text-transform: uppercase;
+    line-height: 3rem;
+}
+
+.tagline{
+    display: block;
+    font-size: 1.5rem;
+    color: var(--brockys-orange);
+    font-family: "Poppins", serif;
+    line-height: 2rem;
+}
+
+.hero{
+    background-image: url('../images/handyman-banner-1920.jpg');
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 121px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.overlay{
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+
+.hero img{
+    z-index: 2;
+}
+
+.hero img, .hero h1, .hero h2{
+    z-index: 2;
+}
+
+main{
+    max-width: 1920px;
+}
+
+section{
+    position: relative;
+    z-index: 2;
+}
