@@ -77,7 +77,7 @@ nav ul li a{
     line-height: 2rem;
 }
 
-.hero{
+#hero{
     background-image: url('../images/handyman-banner-1920.jpg');
     background-size: cover;
     background-position: center;
@@ -99,16 +99,23 @@ nav ul li a{
 }
 
 
-.hero img{
+#hero img{
     z-index: 2;
 }
 
-.hero img, .hero h1, .hero h2{
+#hero img, #hero h1, #hero h2{
     z-index: 2;
+    max-width: 90%;
 }
 
 main{
     max-width: 1920px;
+}
+
+#main-content{
+    max-width: 90%;
+    margin: auto;
+    text-align: justify;
 }
 
 section{
