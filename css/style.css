@@ -217,6 +217,67 @@ section h2{
     background-image: url('../images/painting.jpg');
 }
 
+.about-content{
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-content figure{
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    margin-bottom: 40px;
+}
+
+.about-content figure::before{
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    display: block;
+    width: 300px;
+    height: 400px;  
+    background-color: var(--brockys-blue);
+}
+
+.about-content figure::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: block;
+    width: 300px;
+    height: 400px;
+    background-color: var(--brockys-orange);
+    z-index: 1;
+}
+
+.about-content img{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+}
+
+.about-content p{
+    display: inline-block;
+    width: 50%;
+    flex-grow: 1;
+    margin-left: 40px;
+}
+
+footer{
+    background-color: var(--brockys-charcoal);
+    color: white;
+    text-align: center;
+    font-size: small;
+    padding: 20px;
+    margin-top: 20px;;
+}
+
 @media only screen and (max-width: 600px){
 
     header{
